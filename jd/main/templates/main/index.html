@@ -1,0 +1,297 @@
+{% load static %}
+{% load first_page_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eltrox SHED</title>
+
+    <link rel="preload" href="{% static 'main/fonts/a9a5d0e267ec69c0-s.p.woff2' %}" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust">
+    <link rel="preload" href="{% static 'main/fonts/c6895e2f3f2f01a1-s.p.woff2' %}" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust">
+    <link rel="preload" href="{% static 'main/fonts/e242388265416af6-s.p.woff2' %}" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust">
+    <link rel="preload" href="{% static 'main/fonts/fe953920838a96ea-s.p.woff2' %}" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust">
+
+    <style>
+        @font-face {
+            font-family: SB Sans Text;
+            src: url("{% static 'main/fonts/SBSansText-Thin.cded6c17.woff2' %}") format("woff2");
+            font-weight: 100;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Text;
+            src: url("{% static 'main/fonts/SBSansText-Light.3e0f5126.woff2' %}") format("woff2");
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Text;
+            src: url("{% static 'main/fonts/SBSansText-Regular.a9a5d0e2.woff2' %}") format("woff2");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Text;
+            src: url("{% static 'main/fonts/SBSansText-Medium.c6895e2f.woff2' %}") format("woff2");
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Text;
+            src: url("{% static 'main/fonts/SBSansText-Semibold.81442508.woff2' %}") format("woff2");
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Text;
+            src: url("{% static 'main/fonts/SBSansText-Bold.13b4607c.woff2' %}") format("woff2");
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Text;
+            src: url("{% static 'main/fonts/SBSansText-Heavy.60dd0372.woff2' %}") format("woff2");
+            font-weight: 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Text;
+            src: url("{% static 'main/fonts/SBSansText-LightItalic.268fed51.woff2' %}") format("woff2");
+            font-weight: 300;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Text;
+            src: url("{% static 'main/fonts/SBSansText-RegularItalic.1ecadb59.woff2' %}") format("woff2");
+            font-weight: 400;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Text;
+            src: url("{% static 'main/fonts/SBSansText-SemiBoldItalic.42a386e2.woff2' %}") format("woff2");
+            font-weight: 600;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Text;
+            src: url("{% static 'main/fonts/SBSansText-BoldItalic.75986b42.woff2' %}") format("woff2");
+            font-weight: 700;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Text Cond;
+            src: url("{% static 'main/fonts/SBSansTextCond-Regular.877caaf6.woff2' %}") format("woff2");
+            font-weight: 400;
+            font-stretch: condensed;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Text Cond;
+            src: url("{% static 'main/fonts/SBSansTextCond-Bold.f5722cab.woff2' %}") format("woff2");
+            font-weight: 700;
+            font-stretch: condensed;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Text Caps;
+            src: url("{% static 'main/fonts/SBSansTextCaps-Regular.35291049.woff2' %}") format("woff2");
+            font-weight: 400;
+            font-variant-caps: small-caps;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Text Caps;
+            src: url("{% static 'main/fonts/SBSansTextCaps-Bold.de3a15d5.woff2' %}") format("woff2");
+            font-weight: 700;
+            font-variant-caps: small-caps;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Text Mono;
+            src: url("{% static 'main/fonts/SBSansTextMono-Regular.5ec24657.woff2' %}") format("woff2");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Text Mono;
+            src: url("{% static 'main/fonts/SBSansTextMono-Bold.98f88338.woff2' %}") format("woff2");
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Display;
+            src: url("{% static 'main/fonts/SBSansDisplay-Thin.26fb87ab.woff2' %}") format("woff2");
+            font-weight: 100;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Display;
+            src: url("{% static 'main/fonts/SBSansDisplay-Light.1399f0a6.woff2' %}") format("woff2");
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Display;
+            src: url("{% static 'main/fonts/SBSansDisplay-Regular.e2423882.woff2' %}") format("woff2");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Display;
+            src: url("{% static 'main/fonts/SBSansDisplay-SemiBold.fe953920.woff2' %}") format("woff2");
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Display;
+            src: url("{% static 'main/fonts/SBSansDisplay-Bold.7e09a264.woff2' %}") format("woff2");
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: SB Sans Screen;
+            src: url("{% static 'main/fonts/SBSansScreen.5bd0ae24.woff2' %}") format("woff2");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="{% static 'main/css/index.css' %}">
+    
+    {% block link %}{% endblock %}
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="menu">
+            <h1>Сортировка</h1>
+            <!-- <ul class="sort-menu">
+                <li><a href="?sort=popular">по популярности</a></li>
+                <li><a href="?sort=priceup">по возрастанию цены</a></li>
+                <li><a href="?sort=pricedown">по убыванию цены</a></li>
+                <li><a href="?sort=rating">по рейтингу</a></li>
+                <li><a href="?sort=benefit">сначало выгодные</a></li>
+            </ul> -->
+            <select id="sort-select">
+                <option></option>
+                <option value="?sort=popular">по популярности</option>
+                <option value="?sort=priceup">по возрастанию цены</option>
+                <option value="?sort=pricedown">по убыванию цены</option>
+                <!-- <option><a href="?sort=popular">по популярности</a></option>
+                <option><a href="?sort=priceup">по возрастанию цены</a></option> -->
+            </select>
+
+            {% get_globalcategory as menu_data %}
+            
+
+            <h1>Категорий</h1>
+            <ul class="category-menu">
+                {% for item in menu_data %}
+                <li><a href="{% url 'product-category' global_slug=item.slug %}">{{ item.name }}</a></li>
+
+                
+                {% get_category forloop.counter0 as category %}
+                <ul class="category-menu-two"> 
+                    {% for cat in category %}
+                    <li><a href="{% url 'product-category' global_slug=item.slug cat_slug=cat.slug %}">{{ cat.name }}</a></li>
+                    {% endfor %}
+                </ul>
+                
+                {% endfor %}   
+            </ul>
+        </div>
+
+        <header>
+            <h1 class="logo">Eltrox SHED</h1>
+
+            <div class="menu-keyboard">
+                
+                <button class="menu-button">меню</button>
+                <a class="menu-button" href="{% url 'login' %}">войти</a>
+
+                <form role="search" method="GET" action="{% url 'product-search' %}">
+                    <input type="search" name="search" placeholder="поиск">
+                    <button style="display: none" type="submit">Search</button>
+                </form>
+            </div>
+
+        </header>
+
+        <div class="main_content">
+            {% block content %}{% endblock %}
+        </div>
+
+        <footer>
+            <div class="text-footer">
+                <div class="text-footer-one">
+                    <h1 class="logo">Eltrox SHED</h1>
+                </div>
+                
+                <div class="button-footer">
+                    <a href="#" style="width: 22%">GitHub</a>
+                    <a href="#" style="width: 32%;">Документация</a>
+                    <a href="#" style="width: 42%;">erem_1956@mail.ru</a>
+                </div>
+            </div>
+
+            <div class="text-footer-two">
+                <p>Eltrox SHED - это тестовый проект интернет магазина, все представленные товары беруться с интернет магазина wildberries.ru</p>
+            </div>
+        </footer>
+
+    </div>
+
+    {% block javascript %}{% endblock %}
+    <script src="{% static 'main/js/index.js' %}"></script>
+
+</body>
+</html>

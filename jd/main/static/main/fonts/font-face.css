@@ -1,0 +1,257 @@
+
+@font-face {
+    font-family: SB Sans Text;
+    src: url("{% static 'main/fonts/SBSansText-Thin.cded6c17.woff2' %}") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Text;
+    src: url("{% static 'main/fonts/SBSansText-Light.3e0f5126.woff2' %}") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Text;
+    src: url("{% static 'main/fonts/SBSansText-Regular.a9a5d0e2.woff2' %}") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Text;
+    src: url("{% static 'main/fonts/SBSansText-Medium.c6895e2f.woff2' %}") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Text;
+    src: url("{% static 'main/fonts/SBSansText-Semibold.81442508.woff2' %}") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Text;
+    src: url("{% static 'main/fonts/SBSansText-Bold.13b4607c.woff2' %}") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Text;
+    src: url("{% static 'main/fonts/SBSansText-Heavy.60dd0372.woff2' %}") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Text;
+    src: url("{% static 'main/fonts/SBSansText-LightItalic.268fed51.woff2' %}") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Text;
+    src: url("{% static 'main/fonts/SBSansText-RegularItalic.1ecadb59.woff2' %}") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Text;
+    src: url("{% static 'main/fonts/SBSansText-SemiBoldItalic.42a386e2.woff2' %}") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Text;
+    src: url("{% static 'main/fonts/SBSansText-BoldItalic.75986b42.woff2' %}") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Text Cond;
+    src: url("{% static 'main/fonts/SBSansTextCond-Regular.877caaf6.woff2' %}") format("woff2");
+    font-weight: 400;
+    font-stretch: condensed;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Text Cond;
+    src: url("{% static 'main/fonts/SBSansTextCond-Bold.f5722cab.woff2' %}") format("woff2");
+    font-weight: 700;
+    font-stretch: condensed;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Text Caps;
+    src: url("{% static 'main/fonts/SBSansTextCaps-Regular.35291049.woff2' %}") format("woff2");
+    font-weight: 400;
+    font-variant-caps: small-caps;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Text Caps;
+    src: url("{% static 'main/fonts/SBSansTextCaps-Bold.de3a15d5.woff2' %}") format("woff2");
+    font-weight: 700;
+    font-variant-caps: small-caps;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Text Mono;
+    src: url("{% static 'main/fonts/SBSansTextMono-Regular.5ec24657.woff2' %}") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Text Mono;
+    src: url("{% static 'main/fonts/SBSansTextMono-Bold.98f88338.woff2' %}") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Display;
+    src: url("{% static 'main/fonts/SBSansDisplay-Thin.26fb87ab.woff2' %}") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Display;
+    src: url("{% static 'main/fonts/SBSansDisplay-Light.1399f0a6.woff2' %}") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Display;
+    src: url("{% static 'main/fonts/SBSansDisplay-Regular.e2423882.woff2' %}") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Display;
+    src: url("{% static 'main/fonts/SBSansDisplay-SemiBold.fe953920.woff2' %}") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Display;
+    src: url("{% static 'main/fonts/SBSansDisplay-Bold.7e09a264.woff2' %}") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SB Sans Screen;
+    src: url("{% static 'main/fonts/SBSansScreen.5bd0ae24.woff2' %}") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+@font-face {
+    font-family: __sbSansText_1cea59;
+    src: url(/_next/static/media/a9a5d0e267ec69c0-s.p.woff2) format("woff2");
+    font-display: auto;
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __sbSansText_1cea59;
+    src: url(/_next/static/media/c6895e2f3f2f01a1-s.p.woff2) format("woff2");
+    font-display: auto;
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __sbSansText_1cea59;
+    src: url(/_next/static/media/c6895e2f3f2f01a1-s.p.woff2) format("woff2");
+    font-display: auto;
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __sbSansText_Fallback_1cea59;
+    src: local("Arial");
+    ascent-override:87.67%;descent-override:24.28%;line-gap-override:0.00%;size-adjust:112.02%}
+
+.__className_1cea59 {
+    font-family: __sbSansText_1cea59,__sbSansText_Fallback_1cea59
+}
+
+.__variable_1cea59 {
+    --sb-t: "__sbSansText_1cea59","__sbSansText_Fallback_1cea59"
+}
+
+@font-face {
+    font-family: __sbSansDisplay_1d81d3;
+    src: url(/_next/static/media/e242388265416af6-s.p.woff2) format("woff2");
+    font-display: auto;
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __sbSansDisplay_1d81d3;
+    src: url(/_next/static/media/fe953920838a96ea-s.p.woff2) format("woff2");
+    font-display: auto;
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: __sbSansDisplay_Fallback_1d81d3;
+    src: local("Arial");
+    ascent-override:90.20%;descent-override:31.62%;line-gap-override:0.00%;size-adjust:105.32%}
+
+.__className_1d81d3 {
+    font-family: __sbSansDisplay_1d81d3,__sbSansDisplay_Fallback_1d81d3
+}
+
+.__variable_1d81d3 {
+    --sb-d: "__sbSansDisplay_1d81d3","__sbSansDisplay_Fallback_1d81d3"
+}

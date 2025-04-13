@@ -1,0 +1,56 @@
+{% extends "main/index.html" %}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'jd_auth/css/register.css' %}">
+<link rel="stylesheet" href="{% static 'jd_auth/css/phone_confirm.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<div class="auth-conteiner">
+    
+    <h1 class="logo">Eltrox SHED</h1>
+    <h1 class="logo">Войти</h1>
+
+    <div class="auth-switch">
+        <button class="button-email">Почта</button>
+        <button class="button-phone active">телефон</button>
+    </div>
+
+
+    <form class="phone-form" method="post">
+        {% csrf_token %}
+
+        <label for="">6 значный код</label>
+        <div class="phone-form-button">
+            <!-- <input type="text" name="phone" id="id_phone" maxlength="20" oninput="formatPhoneNumber(this)"> -->
+            <input class="input-code" type="text" id="code" name="code" maxlength="6" required>
+            <a class="register-url btn" target="_blank" href="https://t.me/nikitaXYI_bot">Телеграмм бот</a>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Отправить код</button>
+    </form>
+
+    <a class="register-url btn" href="{% url 'register' %}">Зарегистрироваться</a>
+
+    <div style="{% if not form.errors and not messages %}display: none;{% endif %}" class="errors">
+        {% if form.errors %}
+            {% for field, error in form.errors.items %}
+                <h1>{{ error }}</h1>
+            {% endfor %}
+        {% endif %}
+    
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+    </div>
+</div>
+
+{% endblock %}

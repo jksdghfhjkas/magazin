@@ -1,0 +1,9 @@
+{% extends "main/index.html" %}
+
+{% block content %}
+    <img style="width: 200px;" src="{{ data.UrlsImages.0 }}" alt="">
+    <p>{{ data.name }}</p>
+    <p>{{ data.reviewRating }}</p>
+    <p>{{ data.price }}р {{ data.sale_price }}р {{ data.sale }}%</p>
+{% endblock %}
+

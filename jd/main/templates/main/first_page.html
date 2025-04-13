@@ -1,0 +1,94 @@
+
+{% extends "main/index.html" %}
+{% load static %}
+
+
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'main/css/first_page.css'%}">
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="main-box-card">
+        {% for product in products %}
+
+        <div class="card hidden">
+            <div class="card-img">
+                <img src="{{ product.UrlsImages.0 }}" alt="">
+                <p>-{{ product.sale }}</p>
+            </div>
+
+            <div class="card-textbox">
+                <p>
+                    <span>{{ product.sale_price }}р</span>
+                    <span>{{ product.price }}р</span>
+                </p>
+
+                <p>{{ product.name }}</p>
+            </div>
+
+            <button>в корзину</button>
+
+        </div>
+
+        {% empty %}
+        <div class="empty-none-card">
+            <h1>Товар не найден!</h1>
+        </div>
+        {% endfor %}
+
+    </div>
+
+
+    <div class="pagination">
+        <span class="step-links">
+            {% if page_obj.has_previous %}
+                <a href="?page=1"><<</a>
+                <a href="?page={{ page_obj.previous_page_number }}"><</a>
+            {% endif %}
+    
+            <span class="current">
+                {{ page_obj.number }}
+                <!--  из {{ page_obj.paginator.num_pages }}. -->
+            </span>
+    
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">></a>
+                <a href="?page={{ page_obj.paginator.num_pages }}">>></a>
+            {% endif %}
+        </span>
+    </div>
+{% endblock %}
+
+
+{% block javascript %}
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".card");
+        let visible = 10;
+
+        for (let i = 0; i < visible && i < cards.length; i++) {
+            cards[i].classList.remove("hidden");
+        }
+
+        function showMoreCards() {
+            for (let i = visible; i < visible + 10 && i < cards.length; i++) {
+                cards[i].classList.remove("hidden");
+            }
+            visible += 10;
+
+            if (visible >= cards.length) {
+                window.removeEventListener("scroll", showMoreCards);
+            }
+        }
+
+        window.addEventListener("scroll", () => {
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 50) {
+                showMoreCards();
+            }
+        });
+    });
+</script>
+{% endblock %}

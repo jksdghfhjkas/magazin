@@ -1,0 +1,28 @@
+{% extends "main/index.html" %}
+
+{% block link %}
+<style>
+    .error-text-404 {
+        color: white;
+        margin: 20px;
+    }
+    .error-text-404 a {
+        text-decoration: none;
+        list-style: none;
+        color: var(--color-lemon-3);
+        font-size: 20px;
+        transition: 0.3s;
+    }
+    .error-text-404 a:hover {
+        color: white;
+    }
+
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="error-text-404">
+    <h1>Что-то пошло не так, извинитесь!</h1>
+    <a href="/catalog">Вернитесь назад</a>
+</div>
+{% endblock %}

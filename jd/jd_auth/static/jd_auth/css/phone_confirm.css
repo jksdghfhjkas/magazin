@@ -1,0 +1,10 @@
+.input-code {
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    letter-spacing: 20px; /* Отступ между символами */
+    caret-color: transparent; /* Скрывает мигающий курсор */
+    transition: border-color 0.3s;
+}

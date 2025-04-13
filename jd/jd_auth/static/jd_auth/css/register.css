@@ -1,0 +1,126 @@
+body,
+html {
+    background: var(--bg-color);
+}
+header, 
+footer {
+    display: none;
+}
+.main_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.phone-form.active,
+.email-form.active {
+    display: none;
+}
+.auth-conteiner form,
+.auth-conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.auth-conteiner {
+    position: relative;
+    background: var(--color-dark-8);
+    width: 50%;
+    height: 70%;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 16px;
+}
+.auth-conteiner form input {
+    outline: none;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 0 16px;
+    background: #151419;
+    border: 1px solid #6C7082;
+    color: #fff;
+    font-size: 14px;  
+}
+.auth-conteiner .logo {
+    margin-bottom: 10px;
+}
+.auth-conteiner .logo:first-of-type {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.auth-conteiner form input:focus {
+    outline: 1px solid var(--color-lemon-3);
+}
+.auth-conteiner form button {
+    height: 50px;
+    margin: 10px 0;
+}
+.register-url {
+    color: var(--color-lemon-3);
+    height: 50px;
+}
+.register-url:hover {
+    background: #363947;
+}
+.auth-switch {
+    margin-bottom: 10px;
+}
+.button-phone, 
+.button-email {
+    display: inline-block;
+    border: none;
+    border-radius: 16px;
+    padding: 5px 15px;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 100px;
+    border: 1px solid #6C7082;
+    background-color: var(--color-dark-1);
+    color: white;
+}
+.button-email.active,
+.button-phone.active {
+    color: var(--color-dark-1);
+    background-color: var(--color-lemon-3);
+    transition: 0.5s;
+}
+.email-form input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.phone-form-button {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.phone-form-button a {
+    height: 40px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    border: 1px solid #6C7082;
+}
+.phone-form-button * {
+    width: 49%;
+    margin-bottom: 10px;
+    top: 0px;
+    border-radius: 12px;
+    padding: 0 16px;
+    font-size: 14px;
+}
+.errors {
+    border: 1px solid #6C7082;
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    padding-bottom: 15px;
+}
+.messages,
+.errors h1 {
+    font-size: 16px;
+    color: var(--color-lemon-3);
+}

@@ -1,0 +1,16 @@
+
+file.txt
+задача.txt
+jd/error_logs.log
+auth-bot-fastapi/tesp.py
+auth-bot-fastapi/описание.docx
+.env
+
+# файлы ide и прочих зависимостей
+.vscode/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
